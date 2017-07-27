@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#FunHome {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+#FunHome:hover {opacity: 0.7;}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height:150px;
+}
+  .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+  }
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .close:hover,
+  .close:focus  {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media only screen and (max-width:700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+  #Falsettos {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+  #Falsettos :hover, {opacity: 0.2;}
+
+  .modal2 {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.9);
+    }
+  .modal-content2 {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+    }
+  #caption2 {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height:150px;
+  }
+    .modal-content2, #caption2 {
+      -webkit-animation-name: zoom;
+      -webkit-animation-duration: 0.6s;
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+    @-webkit-keyframes zoom {
+      from {-webkit-transform:scale(0)}
+      to {-webkit-transform:scale(1)}
+    }
+    @keyframes zoom {
+      from {transform:scale(0)}
+      to {transform:scale(1)}
+    }
+    .close2 {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .close2:hover,
+    .close2:focus  {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    @media only screen and (max-width:700px) {
+      .modal-content2 {
+        width: 100%;
+      }
+    }
+    </style>
+</head>
+<body background= "http://31.media.tumblr.com/tumblr_mdlnulxaUg1r7cr7po1_500.jpg">
+
+<h2> <font face= "Cursive" size= "7" color= "white"> <center> ABOUT ME! </font> </center> </h2>
+
+<p> <img src= "https://s-media-cache-ak0.pinimg.com/736x/01/0d/22/010d224de2d8e1399081bb291a3e5a4e--pin-up-girls-cute-girls.jpg" height= "400" width="300"> </img>
+
+<p> <font face= "Georgia" size= "5" color= "white"> <center> <i> Izabella Lizarazo </center> </i> </font> </p>
+
+
+<p> <font size= "5" face= "vendetta" color= "white"> <center> My name is Izabella Lizarazo!
+  I am 15 years old woman and a rising 10th grader.
+  I was born on January 19, 2002 in Hoboken New Jersey.
+  I attend school at the Packer Collegiate Institute, in Brooklyn.
+  When I grow up I want to become a biomedical engineer and have a double major in computer science and biomedical engineering.
+  I also hope to be able to earn my PhD in Math. I have big dreams and hope to accomplish them with the help of God. </center> </font> </p>
+
+<p> <font size= "4" color= "white"> <u> Likes:</u> Musicals (I LOVE Anything Goes,
+  Silk Stockings, The Bandwagon, (ANY Fred Astaire Musical),
+  Rent, Fun Home, Hamilton, Les Miserables, Miss Saigon, Falsettos, Dear Evan Hansen),
+   Food, Dance (Modern, Contemporary), notebooks with beautiful designs, Sherlock, books (fiction and fantasy),
+   alternative rock music, science, and this list is growing! </p>
+
+<img id="FunHome" src= "https://triangleexplorer.files.wordpress.com/2016/10/fun-home-0085-cast-portrait-photo-credit-joan-marcus.jpg"
+alt= "This is the musical Fun Home, which based on the life of Allison Bechedel.
+Allison embarks on a journey of self discovery, discovering her sexuality and the truth about her father.
+ With award winning songs such as Ring of Keys, Fun Home received a Tony for Best Musical along with other awards and nominations.
+ Fun Home is a genuine and clever musical that touches the heart." height="400" width="600">
+
+<div id="myModal" class="modal">
+  <span class= "close"> &times; </span>
+  <img class= "modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+<script>
+var modal = document.getElementById('myModal');
+var img = document.getElementById('FunHome');
+var modalImg = document.getElementById("img01");
+var captionText =
+document.getElementById ("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span =
+document.getElementsByClassName("close") [0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+<img id="Falsettos" src= "http://video.theatregold.com/wp-content/uploads/2016/12/falsettos-returns-to-broadway-co.jpg"
+alt= "Homosexuals, lovers, Falsettos got it all!"
+height="350" width="600">
+
+<div id="myModal2" class="modal2">
+  <span class= "close2"> &times; </span>
+  <img class= "modal-content2" id="img02">
+  <div id="caption2"></div>
+</div>
+
+<script>
+var modal = document.getElementById('myModal2');
+var img = document.getElementById('Falsettos');
+var modalImg = document.getElementById("img02");
+var captionText =
+document.getElementById ("caption2");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var span =
+document.getElementsByClassName("close2") [0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+<img src= "http://d2npu017ljjude.cloudfront.net/images/poster-178275/w230/222222/85000-3.jpeg" height="500" width= "300">
+
+<p> <font size= "4" color= "white"> <u> Dislikes:</u>
+  Rude condescending people, negativity, insensitivity,
+  when people <u> try</u>  to push me down. </p>
+
+<p> <font size="4" color="white"> <u> Ideas for inventions that could use coding and programming! </u> Temperature adjusting jacket;
+  gloves and costumes for Dance Concert that glow and light up;
+  </font> </p>
+
+  <p> Our kanban board helped our team to organize a plan and split responsibilities within our group.
+    <br>
+    Our team compromised well today and we organized our ideas well.
+    We need Sherine and Mariam so that we are all here to reach decisions.
+    <br>
+    I want to learn how to develop the dropdown menu that we need.
+  </p>
+  <br>
+  <p> 1. My job is to find the codes and test them and develop them so that
+    we can use them and bring our ideas to life.
+    2. My goals were to be able to make the navigation bar, create a button that will send you to the
+    site to donate, and continue making effects.
+    3. I want to get better at understanding the codes I do.
+    4. My goals for yesterday are the same for today, except I am working
+    to fix the navigation tab.
+
+    1. My job is the Quality Control Engineer.
+    2. My goals yesterday were to finish finding and developing codes we need.
+    3. I want to get better in fixing codes and debugging.
+    4. I want to fix codes and debug them today.
+
+<i> <marquee direction= "left" scrollamount= "10"> <p> <a href= "http://broadwaymusicalhome.com/shows.htm" </a> <font color="white"> This is my favorite Broadway site! </font> </p> </marquee>
+
+<marquee direction= "right" scrollamount= "10"> <p> <a href= "https://www.goodreads.com/" </a> <font color= "white"> Also find increbile book suggestions here! </font> </p> </marquee> </i>
+
+
+</body>
+</html>
